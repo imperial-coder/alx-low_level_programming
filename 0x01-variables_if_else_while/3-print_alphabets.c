@@ -14,7 +14,7 @@ int main(void)
 	while (i < 123)
 		putchar(i++);
 	i -= 58;
-	while(i < 91)
+	while (i < 91)
 		putchar(i++);
 	putchar('\n');
 	return (0);
