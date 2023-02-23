@@ -14,6 +14,7 @@ void print_alphabet_x10(void)
 
 	while (count < 10)
 	{
+		i = 97;
 		while (i < 123)
 			_putchar(i++);
 		_putchar('\n');
