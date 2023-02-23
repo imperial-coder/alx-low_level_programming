@@ -12,10 +12,11 @@ void print_alphabet_x10(void)
 	int i = 97;
 	int count = 0;
 
-	for (count; count < 10; count++)
+	while (count < 10)
 	{
 		while (i < 123)
 			_putchar(i++);
 		_putchar('\n');
+		count++;
 	}
 }
