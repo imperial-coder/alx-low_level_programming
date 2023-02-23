@@ -9,9 +9,9 @@
 
 int _isupper(int c)
 {
-	int i = 67;
+	int i = 65;
 
-	while (i < 93)
+	while (i < 91)
 	{
 		if (c == i++)
 			return (1);
