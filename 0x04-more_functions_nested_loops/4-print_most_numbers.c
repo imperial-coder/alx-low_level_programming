@@ -8,7 +8,7 @@
 
 void print_most_numbers(void)
 {
-	itn i = 48;
+	int i = 48;
 
 	while (i < 58)
 	{
