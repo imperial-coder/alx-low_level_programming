@@ -5,7 +5,7 @@
  * @dest: stirng destination
  * @src: string source
  * @n: n bytes
- * 
+ *
  * Return: pointer to concatenated string
  */
 

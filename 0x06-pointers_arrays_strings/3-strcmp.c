@@ -4,7 +4,7 @@
  * _strcmp - compares two strings
  * @s1: first sting
  * @s2: second string
- * 
+ *
  * Return: an integer less than, equal to,  or  greater than zero
  */
 

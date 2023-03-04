@@ -5,7 +5,7 @@
  * @dest: string destination
  * @src: stirng source
  * @n: n bytes to copy
- * 
+ *
  * Return: pointer to the copied string
  */
 
