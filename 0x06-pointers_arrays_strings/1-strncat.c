@@ -9,7 +9,7 @@
  * Return: pointer to concatenated string
  */
 
-char *_strncat (char *dest, char *src, int n)
+char *_strncat(char *dest, char *src, int n)
 {
 	int i = 0;
 	int count = 0;
