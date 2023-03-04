@@ -10,7 +10,7 @@
 char *leet(char *s)
 {
 	int i, j;
-	int numbers[5] = {4, 3, 0, 7, 1};
+	char numbers[5] = {'4', '3', '0', '7', '1'};
 	char letters[5] = {'a', 'e', 'o', 't', 'l'};
 
 	for (i = 0; s[i]; i++)
