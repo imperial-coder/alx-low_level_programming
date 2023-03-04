@@ -3,7 +3,7 @@
 /**
  * cap_string - capitalizes all words of a string
  * @s: inputed string
- * 
+ *
  * Return: pointer to the edited string
  */
 
