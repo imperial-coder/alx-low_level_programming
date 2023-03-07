@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * strspn - gets the lenght of a prefix substring
+ * _strspn - gets the lenght of a prefix substring
  * @s: string to be searched
  * @accept: string to search
  *
@@ -9,3 +9,22 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
+	unsigned int i, j, count, flag;
+
+	count = 0;
+	for (i = 0; s[i]; i++)
+	{
+		flag = 0;
+		for (j = 0; accept[j]; j++)
+		{
+			if (s[i] == accept[j])
+			{
+				count++;
+				flag = 1;
+			}
+		}
+		if (flag == 0)
+			return (count);
+	}
+	return (0);
+}
