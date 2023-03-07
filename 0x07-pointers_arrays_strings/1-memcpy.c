@@ -2,7 +2,7 @@
 
 /**
  * _memcpy - copies memory area.
- * @daet: copied memory detsination
+ * @dast: copied memory detsination
  * @src: memory source
  * @n: number of memory byte to copy
  *
