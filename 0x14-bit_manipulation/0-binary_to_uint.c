@@ -1,52 +1,25 @@
 #include "main.h"
 
 /**
- * binary_to_uint - converts a binary number to an unsigned int
- * @b: binary to convert
+ * binary_to_uint - converts a binary number to unsigned int
+ * @b: string containing the binary number
  *
- * Return: value of unsigned int
+ * Return: the converted number
  */
 unsigned int binary_to_uint(const char *b)
 {
-	int count = 0, sum = 0, number, value;
+	int i;
+	unsigned int dec_val = 0;
 
 	if (!b)
 		return (0);
-	while (b[count])
+
+	for (i = 0; b[i]; i++)
 	{
-		if (b[count] != '1' && b[count] != '0')
+		if (b[i] < '0' || b[i] > '1')
 			return (0);
-		count++;
+		dec_val = 2 * dec_val + (b[i] - '0');
 	}
-	number = atoi(b);
-	count = 0;
 
-	while (number > 0)
-	{
-		value = number % 10;
-		if (value == 0)
-		{
-			number /= 10;
-			count++;
-			continue;
-		}
-		sum += (value * binary_to_decimal(count++));
-		number /= 10;
-	}
-	return (sum);
-}
-
-/**
- * binary_to_decimal - returns the
- * @i: number of times to multiply
- *
- * Return: the value of the multiplication
- */
-int binary_to_decimal(int i)
-{
-	if (i == 0)
-		return (1);
-	if (i == 1)
-		return (2);
-	return (2 * binary_to_decimal(i - 1));
+	return (dec_val);
 }
